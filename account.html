@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Account - ShopEasy</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>ShopEasy</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li>
+              <a href="cart.html">Cart <span id="cart-count">0</span></a>
+            </li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="account.html" class="active">My Account</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="account-section">
+      <div class="container">
+        <h2>My Account</h2>
+
+        <div class="account-container">
+          <div class="account-sidebar">
+            <div class="account-user">
+              <div class="account-avatar">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="account-name" id="account-name">Yara Khaled</div>
+            </div>
+
+            <ul class="account-menu">
+              <li class="active" data-tab="orders">
+                <i class="fas fa-shopping-bag"></i> My Orders
+              </li>
+              <li data-tab="info">
+                <i class="fas fa-user-edit"></i> Account Information
+              </li>
+              <li data-tab="favorites">
+                <i class="fas fa-heart"></i> My Favorites
+              </li>
+              <li id="logout-btn">
+                <i class="fas fa-sign-out-alt"></i> Logout
+              </li>
+            </ul>
+          </div>
+
+          <div class="account-content">
+            <!-- My Orders Tab -->
+            <div class="account-tab active" id="orders-tab">
+              <h3>My Orders</h3>
+
+              <div class="orders-list" id="orders-list">
+                <!-- Orders will be loaded here via JavaScript -->
+                <div class="empty-state">
+                  <i class="fas fa-shopping-bag"></i>
+                  <p>You haven't placed any orders yet.</p>
+                  <a href="products.html" class="btn btn-small"
+                    >Start Shopping</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Account Information Tab -->
+            <div class="account-tab" id="info-tab">
+              <h3>Account Information</h3>
+
+              <form id="account-info-form" class="account-form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" value="John" />
+                  </div>
+                  <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" value="Doe" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="account-email">Email</label>
+                  <input
+                    type="email"
+                    id="account-email"
+                    value="john.doe@example.com"
+                    disabled
+                  />
+                  <small>Email cannot be changed</small>
+                </div>
+
+                <div class="form-group">
+                  <label for="account-country">Country</label>
+                  <select id="account-country">
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="AU">Australia</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="account-address">Address</label>
+                  <textarea id="account-address" rows="3">
+123 Main St, Anytown, AN 12345</textarea
+                  >
+                </div>
+
+                <h4>Change Password</h4>
+
+                <div class="form-group">
+                  <label for="current-password">Current Password</label>
+                  <input type="password" id="current-password" />
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="new-password">New Password</label>
+                    <input type="password" id="new-password" />
+                  </div>
+                  <div class="form-group">
+                    <label for="confirm-password">Confirm New Password</label>
+                    <input type="password" id="confirm-password" />
+                  </div>
+                </div>
+
+                <button type="submit" class="btn">Save Changes</button>
+              </form>
+            </div>
+
+            <!-- My Favorites Tab -->
+            <div class="account-tab" id="favorites-tab">
+              <h3>My Favorites</h3>
+
+              <div class="favorites-list" id="favorites-list">
+                <!-- Favorites will be loaded here via JavaScript -->
+                <div class="empty-state">
+                  <i class="fas fa-heart"></i>
+                  <p>You haven't added any favorites yet.</p>
+                  <a href="products.html" class="btn btn-small"
+                    >Browse Products</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>ShopEasy</h3>
+            <p>Your one-stop shop for all your needs.</p>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="categories.html">Categories</a></li>
+              <li><a href="cart.html">Cart</a></li>
+              <li><a href="about-us.html">About Us</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+              <li><a href="account.html">My Account</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: contact@shopeasy.com</p>
+            <p>Phone: (123) 456-7890</p>
+          </div>
+          <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 ShopEasy. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/account.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Check if user is logged in
+        if (!isLoggedIn()) {
+          window.location.href = "login.html";
+          return;
+        }
+
+        updateCartCount();
+        updateLoginStatus();
+        loadAccountInfo();
+        loadFavorites();
+        loadOrders();
+
+        // Tab switching
+        document.querySelectorAll(".account-menu li").forEach(function (tab) {
+          if (tab.id !== "logout-btn") {
+            tab.addEventListener("click", function () {
+              // Remove active class from all tabs
+              document
+                .querySelectorAll(".account-menu li")
+                .forEach(function (t) {
+                  t.classList.remove("active");
+                });
+              document.querySelectorAll(".account-tab").forEach(function (t) {
+                t.classList.remove("active");
+              });
+
+              // Add active class to clicked tab
+              this.classList.add("active");
+              document
+                .getElementById(this.getAttribute("data-tab") + "-tab")
+                .classList.add("active");
+            });
+          }
+        });
+
+        // Logout button
+        document
+          .getElementById("logout-btn")
+          .addEventListener("click", function () {
+            logoutUser();
+          });
+
+        // Account info form submission
+        document
+          .getElementById("account-info-form")
+          .addEventListener("submit", function (e) {
+            e.preventDefault();
+            // In a real application, you would send this data to a server
+            // For now, we'll just show a success message
+            alert("Account information updated successfully!");
+          });
+      });
+      function loadFavorites() {
+        const favoritesList = document.getElementById("favorites-list");
+        if (!favoritesList) return;
+
+        const favorites = getFavorites();
+
+        if (favorites.length === 0) {
+          favoritesList.innerHTML = `
+      <div class="empty-state">
+        <i class="fas fa-heart"></i>
+        <p>You haven't added any favorites yet.</p>
+        <a href="products.html" class="btn btn-small">Browse Products</a>
+      </div>
+    `;
+          return;
+        }
+
+        let favoritesHTML = '<div class="favorites-grid">';
+
+        favorites.forEach((productId) => {
+          const product = getProductById(productId);
+          if (product) {
+            favoritesHTML += `
+        <div class="favorite-item" data-id="${product.id}">
+          <div class="favorite-image">
+            <img src="${product.image}" alt="${product.name}">
+          </div>
+          <div class="favorite-info">
+            <h4>${product.name}</h4>
+            <p class="favorite-price">$${product.price.toFixed(2)}</p>
+            <div class="favorite-actions">
+              <a href="product-detail.html?id=${
+                product.id
+              }" class="btn btn-small">View</a>
+              <button class="btn btn-small btn-outline move-to-cart-btn" data-id="${
+                product.id
+              }">Add to Cart</button>
+              <button class="remove-favorite-btn" data-id="${product.id}">
+                <i class="fas fa-trash"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      `;
+          }
+        });
+
+        favoritesHTML += "</div>";
+        favoritesList.innerHTML = favoritesHTML;
+
+        // Add event listeners for the remove buttons
+        document.querySelectorAll(".remove-favorite-btn").forEach((button) => {
+          button.addEventListener("click", function () {
+            const productId = Number.parseInt(this.getAttribute("data-id"));
+            if (removeFromFavorites(productId)) {
+              // Remove the favorite item from the DOM
+              this.closest(".favorite-item").remove();
+
+              // Check if there are no more favorites
+              if (getFavorites().length === 0) {
+                favoritesList.innerHTML = `
+            <div class="empty-state">
+              <i class="fas fa-heart"></i>
+              <p>You haven't added any favorites yet.</p>
+              <a href="products.html" class="btn btn-small">Browse Products</a>
+            </div>
+          `;
+              }
+            }
+          });
+        });
+
+        // Add event listeners for the move to cart buttons
+        document.querySelectorAll(".move-to-cart-btn").forEach((button) => {
+          button.addEventListener("click", function () {
+            const productId = Number.parseInt(this.getAttribute("data-id"));
+            addToCart(productId, 1);
+            updateCartCount();
+            alert("Product added to cart!");
+          });
+        });
+      }
+      function getFavorites() {
+        if (!isLoggedIn()) return [];
+
+        const user = getCurrentUser();
+        const userFavorites = JSON.parse(
+          localStorage.getItem(`favorites_${user.email}`)
+        );
+        return userFavorites || [];
+      }
+    </script>
+  </body>
+</html>

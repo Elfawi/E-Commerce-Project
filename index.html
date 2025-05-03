@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopEasy - Online Store</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>ShopEasy</h1>
+        </div>
+        <!-- <div class="header-search">
+        <form id="search-form" action="products.html" method="get">
+          <input type="text" id="header-search-input" name="search" placeholder="Search for products...">
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+      </div> -->
+        <nav>
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li>
+              <a href="cart.html">Cart <span id="cart-count">0</span></a>
+            </li>
+            <li><a href="favorites.html">Favorites</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="login.html" id="login-status">Login</a></li>
+            <li><a href="account.html">Account</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h2>Welcome to ShopEasy</h2>
+          <p>Find the best products at the best prices</p>
+          <a href="products.html" class="btn">Shop Now</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-products">
+      <div class="container">
+        <h2>Featured Products</h2>
+        <div class="products-grid" id="featured-products">
+          <!-- Products will be loaded here via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <section class="categories">
+      <div class="container">
+        <h2>Shop by Category</h2>
+        <div class="categories-grid">
+          <div class="category">
+            <img
+              src="https://media.istockphoto.com/id/1095725758/photo/computer-processor-chip-on-motherboard.webp?a=1&b=1&s=612x612&w=0&k=20&c=ByVV5xdtb_UYIwlht6zSzQdYwBM1D_WWtZ9YE9vLf0E="
+              alt="Electronics"
+            />
+            <h3>Electronics</h3>
+            <a
+              href="https://media.istockphoto.com/id/1095725758/photo/computer-processor-chip-on-motherboard.webp?a=1&b=1&s=612x612&w=0&k=20&c=ByVV5xdtb_UYIwlht6zSzQdYwBM1D_WWtZ9YE9vLf0E="
+              class="btn-small"
+              >View All</a
+            >
+          </div>
+          <div class="category">
+            <img
+              src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2xvdGhpbmd8ZW58MHwwfDB8fHww"
+              alt="Clothing"
+            />
+            <h3>Clothing</h3>
+            <a
+              href="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2xvdGhpbmd8ZW58MHwwfDB8fHww"
+              class="btn-small"
+              >View All</a
+            >
+          </div>
+          <div class="category">
+            <img
+              src="https://media.istockphoto.com/id/1996314740/photo/food-cooking-in-a-pot-on-a-kitchen-stove.webp?a=1&b=1&s=612x612&w=0&k=20&c=VqJH6-a8I3_T69Ah7dSezH2DsIvlc7YfwnNUhTVamaU="
+              alt="Home & Kitchen"
+            />
+            <h3>Home & Kitchen</h3>
+            <a
+              href="https://media.istockphoto.com/id/1996314740/photo/food-cooking-in-a-pot-on-a-kitchen-stove.webp?a=1&b=1&s=612x612&w=0&k=20&c=VqJH6-a8I3_T69Ah7dSezH2DsIvlc7YfwnNUhTVamaU="
+              class="btn-small"
+              >View All</a
+            >
+          </div>
+          <div class="category">
+            <img
+              src="https://media.istockphoto.com/id/1957612313/photo/teenage-girl-sitting-on-windowsill-and-reading-a-book.webp?a=1&b=1&s=612x612&w=0&k=20&c=IwEKdIazbNtq1Mu5tK1y9YZHF6eMYxDOErv4xFCtR1Q="
+              alt="Books"
+            />
+            <h3>Books</h3>
+            <a
+              href="https://media.istockphoto.com/id/1957612313/photo/teenage-girl-sitting-on-windowsill-and-reading-a-book.webp?a=1&b=1&s=612x612&w=0&k=20&c=IwEKdIazbNtq1Mu5tK1y9YZHF6eMYxDOErv4xFCtR1Q="
+              class="btn-small"
+              >View All</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>ShopEasy</h3>
+            <p>Your one-stop shop for all your needs.</p>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="categories.html">Categories</a></li>
+              <li><a href="cart.html">Cart</a></li>
+              <li><a href="favorites.html">Favorites</a></li>
+              <li><a href="about-us.html">About Us</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+              <li><a href="login.html">Login</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: contact@shopeasy.com</p>
+            <p>Phone: (123) 456-7890</p>
+          </div>
+          <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 ShopEasy. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/search.js"></script>
+    <script>
+      // Load featured products on the homepage
+      document.addEventListener("DOMContentLoaded", function () {
+        loadFeaturedProducts();
+        updateCartCount();
+        updateLoginStatus();
+      });
+    </script>
+  </body>
+</html>

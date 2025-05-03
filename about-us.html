@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - ShopEasy</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>ShopEasy</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li>
+              <a href="cart.html">Cart <span id="cart-count">0</span></a>
+            </li>
+            <li><a href="about-us.html" class="active">About Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="login.html" id="login-status">Login</a></li>
+            <li><a href="account.html">Account</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="about-section">
+      <div class="container">
+        <h2>About Us</h2>
+
+        <div class="about-content">
+          <div class="about-image">
+            <img
+              src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="ShopEasy Team"
+              style="height: 500px; width: auto; display: block; margin: 0 auto"
+            />
+          </div>
+
+          <div class="about-text">
+            <h3>Our Mission</h3>
+            <p>
+              At ShopEasy, we believe shopping should be simple, enjoyable, and
+              accessible to everyone. Our mission is to provide a seamless
+              online shopping experience with high-quality products at
+              competitive prices.
+            </p>
+
+            <h3>Our Story</h3>
+            <p>
+              Founded in 2025, ShopEasy started as a small online store with a
+              vision to revolutionize e-commerce. Today, we've grown into a
+              trusted marketplace offering thousands of products across multiple
+              categories.
+            </p>
+
+            <h3>What Sets Us Apart</h3>
+            <p>
+              We pride ourselves on exceptional customer service, fast shipping,
+              and a user-friendly shopping experience. Our team is dedicated to
+              continuously improving our platform to meet the evolving needs of
+              our customers.
+            </p>
+          </div>
+        </div>
+
+        <div class="team-section">
+          <h3>Meet Our Team</h3>
+          <div class="team-grid">
+            <div class="team-member">
+              <h4>Mohamed Abd al-Ra'uf al-Fawi</h4>
+              <p>Team Leader</p>
+            </div>
+            <div class="team-member">
+              <h4>yousef ahmed saied</h4>
+            </div>
+            <div class="team-member">
+              <h4>Yara Khaled Ahmed</h4>
+            </div>
+            <div class="team-member">
+              <h4>Christina Sobhy Abdo</h4>
+            </div>
+            <div class="team-member">
+              <h4>Salma Ebrahim El-sayed</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>ShopEasy</h3>
+            <p>Your one-stop shop for all your needs.</p>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="categories.html">Categories</a></li>
+              <li><a href="cart.html">Cart</a></li>
+              <li><a href="about-us.html">About Us</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+              <li><a href="login.html">Login</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: contact@shopeasy.com</p>
+            <p>Phone: (123) 456-789</p>
+          </div>
+          <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 ShopEasy. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/auth.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        updateCartCount();
+        updateLoginStatus();
+      });
+    </script>
+  </body>
+</html>
